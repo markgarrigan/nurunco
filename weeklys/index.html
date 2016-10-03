@@ -55,8 +55,6 @@
         -ms-user-select: none;      /* IE 10+ */
         user-select: none;
         text-decoration: none;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
       }
 
       a:hover, .trigger:hover {
@@ -209,6 +207,7 @@
       	height: 60%;
       	-webkit-transform: translateY(-65%);
       	transform: translateY(-65%);
+        display: none;
       }
 
       .overlay h1 {
@@ -258,6 +257,10 @@
       	transition: transform 0.4s ease-in-out;
       }
 
+      input:checked + .overlay-slidedown article {
+        display: block;
+      }
+
       .arrow {
         position: absolute;
         margin: auto;
@@ -290,11 +293,7 @@
         and (orientation: portrait) {
 
           .arrow {
-            width: 70px;
-            height: 70px;
-            font-size: 70px;
-            line-height: 70px;
-            bottom: 15px;
+            display: none;
           }
 
           .intro p {
