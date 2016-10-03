@@ -281,6 +281,67 @@
       .arrow.hide {
         opacity: 0;
       }
+
+      /* Portrait */
+      @media only screen
+        and (min-device-width: 320px)
+        and (max-device-width: 480px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: portrait) {
+
+          .arrow {
+            width: 70px;
+            height: 70px;
+            font-size: 70px;
+            line-height: 70px;
+            bottom: 15px;
+          }
+
+          .intro p {
+            padding: 0;
+            font-size: 3rem;
+          }
+
+          .day > h1 {
+            padding: 0 1vw;
+            font-size: 5rem;
+          }
+
+          .day > h2 {
+            padding: 0 1vw;
+            font-size: 4rem;
+          }
+
+          .day > h3 {
+            padding: 0 1vw;
+            font-size: 4rem;
+          }
+
+          .day > h4 {
+            padding: 0 1vw;
+            font-size: 2.2rem;
+          }
+
+          .day > p {
+            padding: 0 1vw;
+            font-size: 3rem;
+          }
+
+          .overlay h1 {
+            padding: 0 5vw;
+            font-size: 5rem;
+          }
+
+          .overlay p {
+            padding: 0 5vw;
+            font-size: 3rem;
+          }
+
+          .overlay .overlay-close {
+          	width: 80px;
+          	height: 80px;
+          }
+      }
     </style>
   </head>
   <body>
